@@ -18,6 +18,7 @@ BuildRequires: cmake(KF5DocTools)
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(Qt5)
 BuildRequires: cmake(KF5SysGuard)
+BuildRequires: cmake(KF5NewStuff)
 BuildRequires: ninja
 Requires: %{libname} = %{EVRD}
 
