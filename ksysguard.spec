@@ -19,6 +19,11 @@ BuildRequires: cmake(ECM)
 BuildRequires: cmake(Qt5)
 BuildRequires: cmake(KF5SysGuard)
 BuildRequires: cmake(KF5NewStuff)
+BuildRequires: cmake(KF5IconThemes)
+BuildRequires: cmake(KF5I18n)
+BuildRequires: cmake(KF5ItemViews)
+BuildRequires: cmake(KF5Config)
+BuildRequires: cmake(KF5KDELibs4Support)
 BuildRequires: ninja
 
 %description
