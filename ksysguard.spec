@@ -52,7 +52,7 @@ DESTDIR="%{buildroot}" ninja -C build install %{?_smp_mflags}
 %{_bindir}/ksysguardd
 %{_libdir}/libkdeinit5_ksysguard.so
 %{_datadir}/applications/org.kde.ksysguard.desktop
-%doc %{_docdir}/HTML/en/ksysguard
+%doc %{_docdir}/HTML/*/ksysguard
 %{_datadir}/icons/*/*/*/*
 %{_datadir}/knotifications5/ksysguard.notifyrc
 %{_datadir}/ksysguard
