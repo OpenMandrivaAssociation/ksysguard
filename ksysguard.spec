@@ -3,7 +3,7 @@
 %define plasmaver %(echo %{version} |cut -d. -f1-3)
 
 Name: ksysguard
-Version: 5.2.1
+Version: 5.2.2
 Release: 1
 Source0: http://ftp5.gwdg.de/pub/linux/kde/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: KDE Plasma 5 System Guard application
@@ -14,6 +14,10 @@ BuildRequires: cmake
 BuildRequires: qmake5
 BuildRequires: extra-cmake-modules5
 BuildRequires: pkgconfig(Qt5Core)
+BuildRequires: pkgconfig(Qt5Gui)
+BuildRequires: pkgconfig(Qt5Widgets)
+BuildRequires: pkgconfig(Qt5Test)
+BuildRequires: lm_sensors-devel
 BuildRequires: cmake(KF5DocTools)
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(Qt5)
@@ -27,7 +31,7 @@ BuildRequires: cmake(KF5KDELibs4Support)
 BuildRequires: ninja
 
 %description
-KDE Plasma 5 System Guard application
+KDE Plasma 5 System Guard application.
 
 %prep
 %setup -qn %{name}-%{plasmaver}
