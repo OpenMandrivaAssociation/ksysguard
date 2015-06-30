@@ -5,14 +5,11 @@
 Name: ksysguard
 Version: 5.3.2
 Release: 1
-Source0: http://ftp5.gwdg.de/pub/linux/kde/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
+Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: KDE Plasma 5 System Guard application
 URL: http://kde.org/
 License: GPL
 Group: System/Libraries
-BuildRequires: cmake
-BuildRequires: qmake5
-BuildRequires: extra-cmake-modules5
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Widgets)
@@ -28,21 +25,20 @@ BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5ItemViews)
 BuildRequires: cmake(KF5Config)
 BuildRequires: cmake(KF5KDELibs4Support)
-BuildRequires: ninja
 
 %description
 KDE Plasma 5 System Guard application.
 
 %prep
 %setup -qn %{name}-%{plasmaver}
-%cmake -G Ninja \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+%cmake_kde5
 
 %build
-ninja -C build
+%ninja -C build
 
 %install
-DESTDIR="%{buildroot}" ninja -C build install %{?_smp_mflags}
+%ninja_install -C build
+
 %find_lang ksysguard
 
 %files -f ksysguard.lang
