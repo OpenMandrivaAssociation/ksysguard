@@ -3,7 +3,7 @@
 %define plasmaver %(echo %{version} |cut -d. -f1-3)
 
 Name: ksysguard
-Version: 5.15.5
+Version: 5.16.3
 Release: 1
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: KDE Plasma 5 System Guard application
@@ -43,7 +43,7 @@ KDE Plasma 5 System Guard application.
 
 %files -f ksysguard.lang
 %config %{_sysconfdir}/ksysguarddrc
-%{_sysconfdir}/xdg/ksysguard.knsrc
+%{_datadir}/knsrcfiles/ksysguard.knsrc
 %{_bindir}/ksysguard
 %{_bindir}/ksysguardd
 %{_libdir}/libkdeinit5_ksysguard.so
