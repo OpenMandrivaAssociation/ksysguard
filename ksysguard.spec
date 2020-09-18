@@ -16,6 +16,7 @@ BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(Qt5Test)
 BuildRequires: pkgconfig(libpcap)
 BuildRequires: pkgconfig(libcap)
+BuildRequires: pkgconfig(libnl-3.0)
 BuildRequires: lm_sensors-devel
 BuildRequires: cmake(KF5DocTools)
 BuildRequires: cmake(ECM)
