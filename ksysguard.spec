@@ -26,7 +26,7 @@ BuildRequires: cmake(KF5IconThemes)
 BuildRequires: cmake(KF5I18n)
 BuildRequires: cmake(KF5ItemViews)
 BuildRequires: cmake(KF5Config)
-BuildRequires: cmake(KF5KDELibs4Support)
+BuildRequires: cmake(KF5NetworkManagerQt)
 
 %description
 KDE Plasma 5 System Guard application.
