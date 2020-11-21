@@ -4,7 +4,7 @@
 
 Name: ksysguard
 Version: 5.20.3
-Release: 1
+Release: 2
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: KDE Plasma 5 System Guard application
 URL: http://kde.org/
