@@ -4,7 +4,7 @@
 
 Name: ksysguard
 Version: 5.21.0
-Release: 1
+Release: 2
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: KDE Plasma 5 System Guard application
 URL: http://kde.org/
@@ -17,6 +17,7 @@ BuildRequires: pkgconfig(Qt5Test)
 BuildRequires: pkgconfig(libpcap)
 BuildRequires: pkgconfig(libcap)
 BuildRequires: pkgconfig(libnl-3.0)
+BuildRequires: pkgconfig(udev)
 BuildRequires: lm_sensors-devel
 BuildRequires: cmake(KF5DocTools)
 BuildRequires: cmake(ECM)
