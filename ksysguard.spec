@@ -1,11 +1,10 @@
-%define debug_package %{nil}
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %define plasmaver %(echo %{version} |cut -d. -f1-3)
 
 Name: ksysguard
-Version: 5.21.5
+Version: 5.22.0
 Release: 1
-Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
+Source0: http://download.kde.org/%{stable}/ksysguard/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: KDE Plasma 5 System Guard application
 URL: http://kde.org/
 License: GPL
@@ -54,17 +53,10 @@ KDE Plasma 5 System Guard application.
 %{_datadir}/knsrcfiles/ksysguard.knsrc
 %{_bindir}/ksysguard
 %{_bindir}/ksysguardd
-%{_libdir}/libkdeinit5_ksysguard.so
-%{_libdir}/libksgrdbackend.so
 %{_datadir}/applications/org.kde.ksysguard.desktop
 %doc %{_docdir}/HTML/*/ksysguard
-%{_datadir}/dbus-1/services/org.kde.ksystemstats.service
 %{_datadir}/icons/*/*/*/*
 %{_datadir}/knotifications5/ksysguard.notifyrc
 %{_datadir}/ksysguard
 %{_datadir}/kxmlgui5/ksysguard/ksysguardui.rc
 %{_datadir}/metainfo/org.kde.ksysguard.appdata.xml
-%{_libdir}/libexec/ksysguard/ksgrd_network_helper
-%{_libdir}/qt5/plugins/ksysguard
-%{_bindir}/ksystemstats
-%{_bindir}/kstatsviewer
