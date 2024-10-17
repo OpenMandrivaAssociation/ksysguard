@@ -6,7 +6,7 @@ Version: 5.22.0
 Release: 2
 Source0: http://download.kde.org/%{stable}/ksysguard/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: KDE Plasma 5 System Guard application
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: pkgconfig(Qt5Core)
